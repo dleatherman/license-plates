@@ -1,0 +1,9 @@
+<script webc:type="js">
+  let text = site.title;
+
+  if (title) {
+    text = `${title} | ` + text;
+  }
+
+  `<title>${text}</title>`;
+</script>

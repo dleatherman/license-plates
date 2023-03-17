@@ -1,15 +1,14 @@
 const pluginWebc = require("@11ty/eleventy-plugin-webc");
 
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addPlugin(pluginWebc);
+  eleventyConfig.addPlugin(pluginWebc, {
+    components: "components/**/*.webc"
+  });
 
   return {
-    passthroughFileCopy: true,
     dir: {
-      input: "src",
-      output: "_site",
       data: "_data",
-      includes: "_includes"
+      input: "src",
     }
   };
 };

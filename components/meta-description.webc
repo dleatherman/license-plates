@@ -1,0 +1,9 @@
+<script webc:type="js">
+  let text = site.description;
+
+  if (description) {
+    text = `${description}`;
+  }
+
+  `<meta name="description" content="${text}">`;
+</script>
