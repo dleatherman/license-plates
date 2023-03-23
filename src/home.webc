@@ -3,3 +3,5 @@ title: Home
 layout: "layout.webc"
 permalink: "/"
 ---
+
+<list-states />

@@ -13,6 +13,11 @@
 
   <link webc:is="link-canonical">
 
+  <link rel="stylesheet" href="/style.css" webc:raw>
+  <style @raw="getCSS(page.url)" webc:keep></style>
+  <script @raw="getJS(page.url)" webc:keep></script>
+
+
 </head>
 
 <body>
@@ -20,6 +25,7 @@
   <main id="main">
     <template @html="content" webc:nokeep></template>
   </main>
+  <script @raw="getBundle('js', 'defer')" webc:keep></script>
 </body>
 
 </html>

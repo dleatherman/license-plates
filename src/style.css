@@ -1,0 +1,35 @@
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  font-size: 1.6rem;
+  min-height: 100%;
+}
+
+:root {
+  accent-color: white;
+}
+
+.visually-hidden:not(:focus):not(:active):not(:focus-within) {
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.skip-to-content-link:focus {
+  clip: auto;
+  height: auto;
+  left: 0;
+  margin: 0 auto;
+  right: 0;
+  overflow: auto;
+  position: inherit;
+  text-align: center;
+  width: auto;
+  z-index: 9999;
+}
