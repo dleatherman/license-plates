@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="color-scheme" content="light dark">
-  <meta name="content" description="" webc:is="meta-description">
+  <meta name="content" webc:is="meta-description">
   <meta name="generator" :content="eleventy.generator">
 
   <title webc:is="meta-title"></title>
