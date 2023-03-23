@@ -13,6 +13,8 @@
 
   <link webc:is="link-canonical">
 
+  <link rel="shortcut icon" href="/static/favicon.png">
+
   <link rel="stylesheet" href="/style.css" webc:raw>
   <style @raw="getCSS(page.url)" webc:keep></style>
   <script @raw="getJS(page.url)" webc:keep></script>

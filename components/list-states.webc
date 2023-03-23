@@ -12,6 +12,10 @@
   }
 </style>
 
+<script webc:bucket="defer">
+  console.log('testing')
+</script>
+
 <ul>
   <script webc:type="js" webc:is="template">
     states
