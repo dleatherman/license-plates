@@ -1,8 +1,22 @@
 <script webc:bucket="defer">
+  localforage.config({
+    name: 'USA License Plates'
+  });
   const stateCheckboxes = document.querySelectorAll('input[type="checkbox"]')
   stateCheckboxes.forEach(checkbox => {
+    localforage.getItem(checkbox.value).then(function (value) {
+      if (value === true) {
+        checkbox.checked = true
+      } else {
+        checkbox.checked = false
+      }
+    })
     checkbox.addEventListener('change', (e) => {
-      console.log(e.target.value)
+      if (e.target.checked) {
+        localforage.setItem(e.target.value, true)
+      } else {
+        localforage.setItem(e.target.value, false)
+      }
     })
   })
 </script>
