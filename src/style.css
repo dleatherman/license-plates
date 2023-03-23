@@ -9,7 +9,13 @@ body {
 }
 
 :root {
-  accent-color: white;
+  accent-color: black;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    accent-color: white;
+  }
 }
 
 .visually-hidden:not(:focus):not(:active):not(:focus-within) {
