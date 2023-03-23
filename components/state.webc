@@ -33,10 +33,16 @@
   ul>li {
     display: flex;
     margin-block-end: .5rem;
+    position: relative;
   }
 
   input[type="checkbox"] {
-    appearance: none;
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
   }
 
   input[type="checkbox"]+label {
