@@ -25,14 +25,14 @@
   ul {
     display: grid;
     font-size: 2rem;
-    grid-template-columns: repeat(2, 1fr);
+    gap: .5rem;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
     list-style-type: none;
     padding-inline: 0;
   }
 
   ul>li {
     display: flex;
-    margin-block-end: .5rem;
     position: relative;
   }
 
