@@ -1,11 +1,12 @@
 {
   "name": "USA License Plates",
   "short_name": "Plates",
-  "theme_color": "#1976d2",
-  "background_color": "#fafafa",
+  "theme_color": "#fff",
+  "background_color": "#fff",
   "display": "standalone",
-  "scope": "./",
-  "start_url": "./",
+  "orientation": "any",
+  "scope": "/",
+  "start_url": "/",
   "icons": [
     {
       "src": "static/icons/icon-48x48.png",
