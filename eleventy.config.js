@@ -9,6 +9,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('./static/', '.')
   eleventyConfig.addPassthroughCopy('./src/manifest.json')
 
+  eleventyConfig.addWatchTarget("./components");
+
   return {
     dir: {
       data: "_data",

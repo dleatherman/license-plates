@@ -37,6 +37,7 @@
   <main id="main">
     <template @html="content" webc:nokeep></template>
   </main>
+  <site-footer webc:is="site-footer" webc:nokeep />
   <script webc:raw src="./static/localforage.js"></script>
   <script @raw="getBundle('js', 'defer')" webc:keep></script>
 </body>
