@@ -37,10 +37,10 @@
   <main id="main">
     <template @html="content" webc:nokeep></template>
   </main>
-  <site-footer webc:is="site-footer" webc:nokeep>
+  <site-footer webc:is="site-footer" webc:nokeep></site-footer>
 
-    <script webc:raw src="./static/localforage.js"></script>
-    <script @raw="getBundle('js', 'defer')" webc:keep></script>
+  <script webc:raw src="./static/localforage.js"></script>
+  <script @raw="getBundle('js', 'defer')" webc:keep></script>
 </body>
 
 </html>
