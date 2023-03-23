@@ -1,17 +1,3 @@
-<style>
-  ul {
-    font-size: 2rem;
-    list-style-type: none;
-    padding-inline: 0;
-  }
-
-  input[type="checkbox"] {
-    height: 2rem;
-    width: 2rem;
-    vertical-align: middle;
-  }
-</style>
-
 <ul>
   <script webc:type="js" webc:is="template">
     states

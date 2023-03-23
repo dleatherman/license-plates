@@ -20,6 +20,43 @@
     })
   })
 </script>
+
+<style>
+  ul {
+    display: grid;
+    font-size: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    list-style-type: none;
+    padding-inline: 0;
+  }
+
+  ul>li {
+    display: flex;
+    margin-block-end: .5rem;
+  }
+
+  input[type="checkbox"] {
+    appearance: none;
+  }
+
+  input[type="checkbox"]+label {
+    display: flex;
+    flex: 1;
+    padding: .5rem 1rem;
+  }
+
+  input[type="checkbox"]:checked+label {
+    background: var(--accent);
+    border-radius: 1rem;
+    color: var(--text);
+  }
+
+  input[type="checkbox"]:checked+label::before {
+    content: '\2713 ';
+    padding-right: .5rem;
+  }
+</style>
+
 <script webc:type="js">
-    `<label for="${state.toLowerCase()}"><input type="checkbox" id="${state.toLowerCase()}" name="${state.toLowerCase()}" value="${state.toLowerCase()}"> ${state}</label>`
+    `<input type="checkbox" id="${state.toLowerCase()}" name="${state.toLowerCase()}" value="${state.toLowerCase()}"><label for="${state.toLowerCase()}">${state}</label>`
 </script>
