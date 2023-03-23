@@ -5,5 +5,5 @@
     text = `${description}`;
   }
 
-  `<meta name="description" content="${text}">`;
+  `<meta name="description" content="${text}" />`;
 </script>
