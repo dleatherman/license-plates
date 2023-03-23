@@ -1,3 +1,15 @@
+<style>
+  .total-count {
+    background: var(--foreground);
+    bottom: 0;
+    box-shadow: 0 0 1rem 1rem var(--foreground);
+    color: var(--background);
+    padding: 1.5rem;
+    position: sticky;
+    text-align: center;
+  }
+</style>
+
 <ul>
   <script webc:type="js" webc:is="template">
     states
@@ -7,3 +19,7 @@
       .join("");
   </script>
 </ul>
+<p class="total-count">
+  <span id="total">0</span> /
+  <script webc:type="js">{ { states.length } }</script>
+</p>

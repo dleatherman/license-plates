@@ -3,6 +3,14 @@
     name: 'USA License Plates'
   });
   const stateCheckboxes = document.querySelectorAll('input[type="checkbox"]')
+  const total = document.querySelector('#total')
+  const updateCount = function () {
+    localforage.length().then(function (count) {
+      total.textContent = count
+    }).catch(function (err) {
+      console.error(err);
+    });
+  }
   stateCheckboxes.forEach(checkbox => {
     localforage.getItem(checkbox.value).then(function (value) {
       if (value === true) {
@@ -13,12 +21,13 @@
     })
     checkbox.addEventListener('change', (e) => {
       if (e.target.checked) {
-        localforage.setItem(e.target.value, true)
+        localforage.setItem(e.target.value, true).then(updateCount)
       } else {
-        localforage.setItem(e.target.value, false)
+        localforage.removeItem(e.target.value).then(updateCount)
       }
     })
   })
+  updateCount();
 </script>
 
 <style>
@@ -54,7 +63,7 @@
   input[type="checkbox"]:checked+label {
     background: var(--accent);
     border-radius: 1rem;
-    color: var(--text);
+    color: var(--foreground);
   }
 
   input[type="checkbox"]:checked+label::before {
@@ -64,5 +73,5 @@
 </style>
 
 <script webc:type="js">
-    `<input type="checkbox" id="${state.toLowerCase()}" name="${state.toLowerCase()}" value="${state.toLowerCase()}"><label for="${state.toLowerCase()}">${state}</label>`
+  `<input type="checkbox" id="${state.toLowerCase()}" name="${state.toLowerCase()}" value="${state.toLowerCase()}"><label for="${state.toLowerCase()}">${state}</label>`
 </script>
