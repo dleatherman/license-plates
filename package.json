@@ -4,7 +4,7 @@
   "description": "",
   "main": ".eleventy.config.js",
   "scripts": {
-    "start": "npm-run-all --parallel dev:*",
+    "start": "eleventy --serve",
     "build": "npm-run-all prod:*",
     "dev:clean": "rm -rf _site",
     "dev:start": "eleventy --serve",

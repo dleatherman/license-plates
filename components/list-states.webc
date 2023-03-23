@@ -12,15 +12,11 @@
   }
 </style>
 
-<script webc:bucket="defer">
-  console.log('testing')
-</script>
-
 <ul>
   <script webc:type="js" webc:is="template">
     states
       .map((state) => `<li>
-          <label for="${state.toLowerCase()}"><input type="checkbox" id="${state.toLowerCase()}" name="${state.toLowerCase()}"> ${state}</label>
+          ${`<state webc:nokeep @state="${state}">`}
         </li>`)
       .join("");
   </script>

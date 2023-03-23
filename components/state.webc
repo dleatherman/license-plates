@@ -1,0 +1,11 @@
+<script webc:bucket="defer">
+  const stateCheckboxes = document.querySelectorAll('input[type="checkbox"]')
+  stateCheckboxes.forEach(checkbox => {
+    checkbox.addEventListener('change', (e) => {
+      console.log(e.target.value)
+    })
+  })
+</script>
+<script webc:type="js">
+    `<label for="${state.toLowerCase()}"><input type="checkbox" id="${state.toLowerCase()}" name="${state.toLowerCase()}" value="${state.toLowerCase()}"> ${state}</label>`
+</script>
