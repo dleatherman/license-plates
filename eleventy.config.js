@@ -7,6 +7,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy('./src/style.css')
   eleventyConfig.addPassthroughCopy('./static/', '.')
+  eleventyConfig.addPassthroughCopy('./src/manifest.json')
 
   return {
     dir: {
