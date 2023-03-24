@@ -14,17 +14,15 @@ body {
 
 :root {
   accent-color: black;
-  --accent: black;
-  --background: black;
-  --foreground: white;
+  --background: white;
+  --foreground: black;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     accent-color: white;
-    --accent: white;
     --background: black;
-    --foreground: black;
+    --foreground: white;
   }
 }
 

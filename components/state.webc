@@ -61,9 +61,9 @@
   }
 
   input[type="checkbox"]:checked+label {
-    background: var(--accent);
+    background: var(--foreground);
     border-radius: 1rem;
-    color: var(--foreground);
+    color: var(--background);
   }
 
   input[type="checkbox"]:checked+label::before {

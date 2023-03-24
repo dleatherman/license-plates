@@ -1,9 +1,9 @@
 <style>
   .total-count {
-    background: var(--foreground);
+    background: var(--background);
     bottom: 0;
-    box-shadow: 0 0 1rem 1rem var(--foreground);
-    color: var(--background);
+    box-shadow: 0 0 1rem 1rem var(--background);
+    color: var(--foreground);
     padding: 1.5rem;
     position: sticky;
     text-align: center;
