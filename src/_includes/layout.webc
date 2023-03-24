@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="color-scheme" content="light dark">
-  <meta name="theme-color" content="black" media="(prefers-color-scheme: dark)">
-  <meta name="theme-color" content="white">
+  <meta name="theme-color" content="#222222" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#D4E5F5">
   <meta webc:is="meta-description" webc:nokeep>
   <meta name="generator" :content="eleventy.generator">
 
