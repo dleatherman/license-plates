@@ -35,9 +35,7 @@
 <body>
   <a href="#main" class="visually-hidden skip-to-content">Skip to content</a>
   <header>
-    <a href="/">
-      <logo aria-hidden></logo>
-    </a>
+    <logo aria-hidden></logo>
   </header>
   <main id="main">
     <template @html="content" webc:nokeep></template>

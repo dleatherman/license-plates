@@ -55,7 +55,7 @@ a {
   z-index: 9999;
 }
 
-header a {
+header {
   display: block;
   text-align: center;
 }
