@@ -25,7 +25,7 @@
   <link rel="apple-touch-icon" sizes="144x144"
     href="/static/icons/apple-touch-icon-ipad-retina-152x152-precomposed.png">
 
-  <link rel="stylesheet" href="/style.css?202303241228" webc:raw>
+  <link rel="stylesheet" href="/style.css" webc:raw>
   <style @raw="getCSS(page.url)" webc:keep></style>
   <script @raw="getJS(page.url)" webc:keep></script>
 
