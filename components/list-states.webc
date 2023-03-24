@@ -4,7 +4,7 @@
     bottom: 0;
     box-shadow: 0 0 1rem 1rem var(--color-background);
     color: var(--color-foreground);
-    padding: 1.5rem;
+    padding: 1.5rem 1.5rem env(safe-area-inset-bottom);
     position: sticky;
     text-align: center;
   }
