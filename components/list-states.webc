@@ -11,6 +11,7 @@
 </style>
 
 <ul>
+  <!-- <li webc:for="(i, key) in states" webc:is="state" @state="key"></li> -->
   <script webc:type="js" webc:is="template">
     states
       .map((state) => `<li>
